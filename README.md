@@ -1,6 +1,5 @@
 # TrustNet - AI-Powered Document Fraud Detection Platform
 
-![TrustNet Logo](frontend/public/favicon.svg)
 
 TrustNet is a production-grade SaaS platform that uses advanced AI and machine learning to detect document fraud, tampering, and manipulation. It combines multiple forensic analysis techniques including Error Level Analysis (ELA), Benford's Law analysis, NLP processing, and Graph Neural Networks to provide comprehensive document security.
 
@@ -55,7 +54,8 @@ TrustNet is a production-grade SaaS platform that uses advanced AI and machine l
 ## 📸 Screenshots
 
 ### Landing Page
-![Landing Page](frontend/src/assets/hero.png)
+![Landing Page](<img width="1897" height="1028" alt="image" src="https://github.com/user-attachments/assets/d7de4e70-4ee5-4df5-8d07-be521b6c5672" />
+)
 
 ### Dashboard
 *Professional dashboard with real-time metrics, risk trends, and scan history*
