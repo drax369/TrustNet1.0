@@ -46,12 +46,12 @@ export default function ProtectedLayout() {
   // Sidebar Menu Items Config
   const menuItems = [
     { label: 'Dashboard', path: '/dashboard', icon: <LayoutDashboard size={18} /> },
-    { label: 'Intake Workspace', path: '/workspace', icon: <FileSearch size={18} /> },
-    { label: 'User Profile', path: '/profile', icon: <User size={18} /> },
-    { label: 'Account Settings', path: '/settings', icon: <Settings size={18} /> },
-    { label: 'Notifications', path: '/notifications', icon: <Bell size={18} />, badge: true },
-    { label: 'Billing & Plan', path: '/billing', icon: <CreditCard size={18} /> },
-    { label: 'Help Desk', path: '/help', icon: <HelpCircle size={18} /> }
+    { label: 'Intake Workspace', path: '/dashboard/workspace', icon: <FileSearch size={18} /> },
+    { label: 'User Profile', path: '/dashboard/profile', icon: <User size={18} /> },
+    { label: 'Account Settings', path: '/dashboard/settings', icon: <Settings size={18} /> },
+    { label: 'Notifications', path: '/dashboard/notifications', icon: <Bell size={18} />, badge: true },
+    { label: 'Billing & Plan', path: '/dashboard/billing', icon: <CreditCard size={18} /> },
+    { label: 'Help Desk', path: '/dashboard/help', icon: <HelpCircle size={18} /> }
   ]
 
   // Breadcrumbs Generator

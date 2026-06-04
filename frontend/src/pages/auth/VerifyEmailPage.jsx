@@ -15,14 +15,14 @@ export default function VerifyEmailPage() {
   const isVerified = location.state?.verified || user?.email_confirmed_at || verified
 
   useEffect(() => {
-    // If user is already verified, redirect to dashboard
-    if (isVerified) {
+    // If user is already verified and authenticated, redirect to dashboard
+    if (isVerified && user) {
       setVerified(true)
       setTimeout(() => {
         navigate('/dashboard', { replace: true })
       }, 2000)
     }
-  }, [isVerified, navigate])
+  }, [isVerified, user, navigate])
 
   const handleResend = async () => {
     setResending(true)

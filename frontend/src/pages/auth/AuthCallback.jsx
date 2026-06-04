@@ -10,8 +10,8 @@ export default function AuthCallback() {
   useEffect(() => {
     const handleCallback = async () => {
       try {
-        // Let Supabase handle the session from URL hash
-        const { data, error } = await supabase.auth.getSession()
+        // Extract session from URL hash (for email verification and OAuth)
+        const { data, error } = await supabase.auth.getSessionFromUrl()
         
         if (error) {
           console.error("Auth callback error:", error)
@@ -28,7 +28,7 @@ export default function AuthCallback() {
           // If password recovery callback, redirect to reset password page
           navigate('/reset-password', { replace: true })
         } else if (type === 'signup') {
-          // Email verification for signup
+          // Email verification for signup - redirect to verify email page
           navigate('/verify-email', { replace: true, state: { verified: true } })
         } else {
           // OAuth login or standard signup confirm

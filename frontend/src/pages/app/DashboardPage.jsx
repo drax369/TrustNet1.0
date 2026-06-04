@@ -142,8 +142,8 @@ export default function DashboardPage() {
           <div style={{ fontSize: 11, fontWeight: 700, color: 'hsl(var(--text-secondary))', textTransform: 'uppercase', letterSpacing: '0.05em' }}>
             Historical Scan Risk Trends
           </div>
-          <div style={{ height: 200, width: '100%', marginTop: 8 }}>
-            <ResponsiveContainer width="100%" height="100%">
+          <div style={{ height: 200, width: '100%', marginTop: 8, minWidth: 300 }}>
+            <ResponsiveContainer width="100%" height="100%" minWidth={300} minHeight={200}>
               <AreaChart data={chartData} margin={{ top: 10, right: 10, left: -25, bottom: 0 }}>
                 <defs>
                   <linearGradient id="colorRisk" x1="0" y1="0" x2="0" y2="1">
