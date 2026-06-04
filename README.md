@@ -54,7 +54,7 @@ TrustNet is a production-grade SaaS platform that uses advanced AI and machine l
 ## 📸 Screenshots
 
 ### Landing Page
-![Landing Page](<img width="1897" height="1028" alt="image" src="https://github.com/user-attachments/assets/d7de4e70-4ee5-4df5-8d07-be521b6c5672" />
+![Landing Page](image.png
 )
 
 ### Dashboard
